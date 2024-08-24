@@ -23,15 +23,7 @@ const NavLinks = () => {
                {nav.nav}
             </Link>
          ))}
-         {/* <Link href="#" className="relative hover:text-green-400 after:content[''] after:h-[1px] after:bg-white after:duration-200 hover:after:block after:w-4/5 duration-100">
-            Home
-         </Link>
-         <Link href="#about" className="relative hover:text-green-400 after:content[''] after:h-[1px] after:bg-white after:duration-200 hover:after:block after:w-4/5 duration-100">
-            About me
-         </Link>
-         <Link href="#contact" className="relative hover:text-green-400 after:content[''] after:h-[1px] after:bg-white after:duration-200 hover:after:block after:w-4/5 duration-100">
-            Contact
-         </Link> */}
+         
       </div>
    );
 };

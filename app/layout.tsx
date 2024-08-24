@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { roboto } from "@/app/ui/fonts";
+import { poppins, roboto } from "@/app/ui/fonts";
 
 export const metadata: Metadata = {
    title: "Design Portofolio",
@@ -14,8 +14,8 @@ export default function RootLayout({
    children: React.ReactNode;
 }>) {
    return (
-      <html lang="en">
-         <body className={roboto.className}>{children}</body>
+      <html lang="en" className="scroll-smooth">
+         <body className={poppins.className}>{children}</body>
       </html>
    );
 }

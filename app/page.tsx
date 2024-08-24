@@ -1,5 +1,6 @@
-import Hero from "./ui/hero";
 import Navbar from "./ui/navbars";
+import Hero from "./ui/hero";
+import About from "./ui/about";
 
 export default function LandingPage() {
    return (
@@ -8,6 +9,8 @@ export default function LandingPage() {
             <Navbar />
             <Hero />
          </div>
+
+         <About />
       </main>
    );
 }
