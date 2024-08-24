@@ -24,7 +24,7 @@ const Skills = () => {
                   {skills.frontend.map(
                      (skill: SkillSchema) =>
                         skill.width == 50 && (
-                           <div className="relative border-8 h-32 w-32 rounded-full border-green-400 flex items-center justify-center mx-auto bg-white">
+                           <div key={skill.name} className="border-8 h-32 w-32 rounded-full border-green-400 flex items-center justify-center mx-auto bg-white">
                               <Image src={`/images/brands/${skill.image}`} width={skill.width} height={skill.width} alt={skill.name} />
                            </div>
                         )
@@ -34,7 +34,7 @@ const Skills = () => {
                   {skills.frontend.map(
                      (skill) =>
                         skill.width == 30 && (
-                           <div className="relative border-8 h-20 w-20 rounded-full border-green-400 flex items-center justify-center bg-white">
+                           <div key={skill.name} className="border-8 h-20 w-20 rounded-full border-green-400 flex items-center justify-center bg-white">
                               <Image src={`/images/brands/${skill.image}`} width={skill.width} height={skill.width} alt={skill.name} />
                            </div>
                         )
@@ -49,7 +49,7 @@ const Skills = () => {
                   {skills.backend.map(
                      (skill) =>
                         skill.width == 50 && (
-                           <div className="relative border-8 h-32 w-32 rounded-full border-green-400 flex items-center justify-center mx-auto bg-white">
+                           <div key={skill.name} className="border-8 h-32 w-32 rounded-full border-green-400 flex items-center justify-center mx-auto bg-white">
                               <Image src={`/images/brands/${skill.image}`} width={skill.width} height={skill.width} alt={skill.name} />
                            </div>
                         )
@@ -59,7 +59,7 @@ const Skills = () => {
                   {skills.backend.map(
                      (skill) =>
                         skill.width == 30 && (
-                           <div className="relative border-8 h-20 w-20 rounded-full border-green-400 flex items-center justify-center bg-white">
+                           <div key={skill.name} className="border-8 h-20 w-20 rounded-full border-green-400 flex items-center justify-center bg-white">
                               <Image src={`/images/brands/${skill.image}`} width={skill.width} height={skill.width} alt={skill.name} />
                            </div>
                         )
@@ -68,21 +68,6 @@ const Skills = () => {
             </div>
          </div>
       </article>
-   );
-};
-
-const Skill = ({ skill, className }: any) => {
-   const innerClassName = clsx({
-      "relative border-8 h-32 w-32 rounded-full border-green-400 flex items-center justify-center mx-auto bg-white": skill.width == 50,
-      "relative border-8 h-20 w-20 rounded-full border-green-400 flex items-center justify-center bg-white": skill.width == 30,
-   });
-
-   return (
-      <div className={className}>
-         <div className={innerClassName}>
-            <Image src={`/images/brands/${skill.image}`} width={skill.width} height={skill.height} alt={skill.name} />
-         </div>
-      </div>
    );
 };
 
