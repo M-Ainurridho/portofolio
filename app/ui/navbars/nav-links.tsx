@@ -11,8 +11,8 @@ const NavLinks = () => {
          href: "#about",
       },
       {
-         nav: "Service",
-         href: "#service",
+         nav: "Contact",
+         href: "#contact",
       },
    ];
 
