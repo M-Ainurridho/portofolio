@@ -1,6 +1,6 @@
 const ContactForm = () => {
    return (
-      <div className="contact-form basis-[50%] ">
+      <div className="contact-form basis-[55%] ">
          <form action="" className="">
             <InputField type="text" name="name" placeholder="Your Name" autoComplete="off" required={true} />
             <InputField type="email" name="email" placeholder="Your Email" autoComplete="off" required={true} />

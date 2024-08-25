@@ -45,8 +45,8 @@ export const skills = {
          height: 50,
       },
       {
-         name: "php",
-         image: "php.png",
+         name: "mysql",
+         image: "mysql.png",
          width: 30,
          height: 30,
       },
