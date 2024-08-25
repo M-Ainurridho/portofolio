@@ -12,11 +12,11 @@ interface SkillSchema {
 const Skills = () => {
    return (
       <article>
-         <header className="mb-4">
+         {/* <header className="mb-4">
             <h2 className="text-center text-2xl font-medium">Skills</h2>
-         </header>
+         </header> */}
 
-         <div className="flex">
+         <div className="flex items-center">
             <div className="frontend basis-1/2">
                <h4 className="text-center text-xl mb-3">Frontend</h4>
 
@@ -42,8 +42,10 @@ const Skills = () => {
                </div>
             </div>
 
+            <div className="w-[2px] h-48 bg-white rounded-full"></div>
+
             <div className="backend basis-1/2">
-               <h4 className="text-center text-xl mb-3">Backend</h4>
+               <h4 className="text-center text-xl mb-3 relative">Backend</h4>
 
                <div className="flex justify-around mb-4">
                   {skills.backend.map(

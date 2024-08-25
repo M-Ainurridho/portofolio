@@ -1,6 +1,7 @@
 import Navbar from "./ui/navbars";
 import Hero from "./ui/hero";
 import About from "./ui/about";
+import Contact from "./ui/contact";
 
 export default function LandingPage() {
    return (
@@ -11,6 +12,7 @@ export default function LandingPage() {
          </div>
 
          <About />
+         <Contact />
       </main>
    );
 }

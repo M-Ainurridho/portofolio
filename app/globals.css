@@ -26,6 +26,26 @@
     rgb(var(--background-start-rgb));
 } */
 
+/* width */
+::-webkit-scrollbar {
+   width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background-color: transparent !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background-color: #4ade80 !important;
+   border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar {
+   display: none !important;
+}
+
 @layer utilities {
    .text-balance {
       text-wrap: balance;

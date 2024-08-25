@@ -2,8 +2,8 @@ import Skills from "./skills";
 
 const About = () => {
    return (
-      <section id="about" className="bg-neutral-900 px-32 py-10">
-         <article className="mb-6">
+      <section id="about" className="bg-neutral-900 px-32 py-16">
+         <article className="mb-8">
             <header className="mb-3">
                <h2 className="text-center text-2xl font-semibold">About</h2>
             </header>
@@ -13,11 +13,11 @@ const About = () => {
                quite a lot, I will never stop developing myself to be better every day.
             </p>
 
-            <blockquote className="italic font-medium flex items-center justify-center gap-x-3">
+            {/* <blockquote className="italic font-medium flex items-center justify-center gap-x-3">
                <span className="inline-block h-[1px] w-20 bg-white"></span>
                Coding for Work, Fun, and Hobby
                <span className="inline-block h-[1px] w-20 bg-white"></span>
-            </blockquote>
+            </blockquote> */}
          </article>
 
          <Skills />
