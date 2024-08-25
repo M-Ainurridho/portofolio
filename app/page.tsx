@@ -1,5 +1,5 @@
 import Navbar from "./ui/navbars";
-import Hero from "./ui/hero";
+import Hero from "./ui/home/hero";
 import About from "./ui/about";
 import Contact from "./ui/contact";
 import Footer from "./ui/footer";
