@@ -36,11 +36,12 @@ const Hero = () => {
                </div>
             </div>
          </div>
-         <div className="hero-image">
+         <div className="hero-image" style={{ perspective: "100px" }}>
             <div
                className="box-image w-[350px] h-[350px] bg-neutral-900 rounded-3xl overflow-hidden"
                style={{
                   boxShadow: "5px 5px 3px #4ade80",
+                  transform: "rotateY(-1.5deg)",
                }}
             >
                <Image width={300} height={300} src="/images/avatars/photo.png" alt="Photo" className="mx-auto" />
