@@ -33,13 +33,13 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-   background-color: transparent !important;
+   background-color: #262626 !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
    background-color: #4ade80 !important;
-   border-radius: 10px;
+   border-radius: 20px;
 }
 
 textarea::-webkit-scrollbar {

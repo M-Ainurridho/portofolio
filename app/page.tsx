@@ -2,6 +2,7 @@ import Navbar from "./ui/navbars";
 import Hero from "./ui/hero";
 import About from "./ui/about";
 import Contact from "./ui/contact";
+import Footer from "./ui/footer";
 
 export default function LandingPage() {
    return (
@@ -13,6 +14,7 @@ export default function LandingPage() {
 
          <About />
          <Contact />
+         <Footer />
       </main>
    );
 }
