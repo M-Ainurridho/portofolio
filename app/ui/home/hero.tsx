@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
    return (
-      <section id="hero" className="px-8 py-6 md:px-16 lg:px-32 flex flex-col md:flex-row justify-between items-center gap-y-8 md:grow">
+      <section id="hero" className="px-8 py-6 md:px-16 lg:px-32 flex flex-col justify-center gap-y-8 grow md:flex-row md:justify-between md:items-center">
          <div className="hero-intro order-2 md:order-1">
             <div className="text-center md:text-start">
                <p className="text-xl lg:text-2xl mb-1 hidden md:flex md:items-center">
@@ -29,9 +29,9 @@ const Hero = () => {
 
             <SocialMedia />
          </div>
-         <div className="order-1 md:order-2" style={{ perspective: "100px" }}>
+         <div className="order-1 md:order-2 flex justify-center" style={{ perspective: "100px" }}>
             <div
-               className="w-72 h-72 lg:w-[350px] lg:h-[350px] bg-neutral-900 rounded-3xl overflow-hidden"
+               className="w-68 h-68 md:w-72 md:h-72 lg:w-[350px] lg:h-[350px] bg-neutral-900 rounded-3xl overflow-hidden"
                style={{
                   boxShadow: "5px 5px 3px #4ade80",
                   transform: "rotateY(-1.5deg)",
