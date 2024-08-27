@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SocialMedia from "./social-media";
 import Image from "next/image";
 
@@ -16,7 +17,13 @@ const Hero = () => {
                   </strong>
                </h1>
                <p>Web Developer & Student</p>
-               <button className="bg-green-400 hover:bg-green-500 duration-100 text-white px-4 py-2 rounded-full mt-4 mb-12">Download CV</button>
+               <Link
+                  href="https://drive.usercontent.google.com/u/0/uc?id=13sHxZUILQgCtRxVRZ6hjDpHsNyAEeZBj&export=download"
+                  download
+                  className="inline-block bg-green-400 hover:bg-green-500 duration-100 text-white px-4 py-2 rounded-full mt-4 mb-12"
+               >
+                  Download CV
+               </Link>
             </div>
 
             <SocialMedia />

@@ -18,12 +18,12 @@ const SocialMedia = () => {
       {
          name: "Instagram",
          icon: faInstagram,
-         url: "https://www.instagram.com",
+         url: "https://www.instagram.com/ainurridho_7/",
       },
       {
          name: "Linkedin",
          icon: faLinkedinIn,
-         url: "https://www.linkedin.com",
+         url: "https://www.linkedin.com/in/muhammad-ainurridho-56840b27b/",
       },
    ];
    return (

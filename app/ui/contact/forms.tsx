@@ -1,10 +1,29 @@
+"use client";
+
+import { FormEvent, useState } from "react";
+
 const ContactForm = () => {
+   const sendMail = (e: any) => {
+      e.preventDefault();
+
+      const data = {
+         name: e.target[0].value,
+         email: e.target[1].value,
+         subject: e.target[2].value,
+         description: e.target[3].value,
+      };
+
+      window.location.href = "mailto:m.ainurridho11@gmail.com" +
+         (data?.subject && `?subject=${data.subject}`) +
+         (data?.description && `&body=${data.description}`)
+   };
+
    return (
       <div className="contact-form basis-[55%] ">
-         <form action="" className="">
-            <InputField type="text" name="name" placeholder="Your Name" autoComplete="off" required={true} />
-            <InputField type="email" name="email" placeholder="Your Email" autoComplete="off" required={true} />
-            <InputField type="text" name="subject" placeholder="Subject" autoComplete="off"/>
+         <form onSubmit={sendMail}>
+            <InputField type="text" name="name" placeholder="Your Name" required={true} />
+            <InputField type="email" name="email" placeholder="Your Email" required={true} />
+            <InputField type="text" name="subject" placeholder="Subject" />
             <div className="mb-4">
                <textarea
                   name="description"
@@ -21,7 +40,7 @@ const ContactForm = () => {
    );
 };
 
-const InputField = ({ type, name, placeholder, autoComplete = "on", required = false }: any) => {
+const InputField = ({ type, name, placeholder, autoComplete = "off", required = false }: any) => {
    return (
       <div className="mb-4">
          <input
