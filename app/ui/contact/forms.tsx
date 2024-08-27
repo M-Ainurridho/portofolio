@@ -19,7 +19,7 @@ const ContactForm = () => {
    };
 
    return (
-      <div className="contact-form basis-[55%] ">
+      <div className="basis-full md:basis-[55%]">
          <form onSubmit={sendMail}>
             <InputField type="text" name="name" placeholder="Your Name" required={true} />
             <InputField type="email" name="email" placeholder="Your Email" required={true} />
