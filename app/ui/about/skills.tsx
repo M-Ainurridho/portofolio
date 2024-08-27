@@ -12,15 +12,11 @@ interface SkillSchema {
 const Skills = () => {
    return (
       <article>
-         {/* <header className="mb-4">
-            <h2 className="text-center text-2xl font-medium">Skills</h2>
-         </header> */}
-
-         <div className="flex items-center">
-            <div className="frontend basis-1/2">
+         <div className="flex flex-col items-center gap-8 md:flex-row">
+            <div className="frontend basis-full md:basis-1/2">
                <h4 className="text-center text-xl mb-3">Frontend</h4>
 
-               <div className="flex justify-around mb-4">
+               <div className="flex gap-4 mb-4 md:gap-0">
                   {skills.frontend.map(
                      (skill: SkillSchema) =>
                         skill.width == 50 && (
@@ -42,12 +38,12 @@ const Skills = () => {
                </div>
             </div>
 
-            <div className="w-[2px] h-48 bg-white rounded-full"></div>
+            <div className="w-[2px] h-10  bg-white rounded-full md:h-48"></div>
 
-            <div className="backend basis-1/2">
+            <div className="backend basis-full md:basis-1/2">
                <h4 className="text-center text-xl mb-3 relative">Backend</h4>
 
-               <div className="flex justify-around mb-4">
+               <div className="flex gap-4 mb-4 md:gap-0">
                   {skills.backend.map(
                      (skill) =>
                         skill.width == 50 && (
